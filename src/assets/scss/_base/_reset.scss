@@ -7,6 +7,11 @@
   font-family: "Raleway", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .container {
   max-width: calc(1490px - 80px);
   margin: auto;
