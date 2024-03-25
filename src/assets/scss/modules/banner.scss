@@ -1,0 +1,18 @@
+.crm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 590px;
+  background: #FAFAFA;
+
+  &__left {
+  }
+
+  &__img {
+    max-height: 590px;
+  }
+
+  &__right {
+    max-width: 730px;
+  }
+}

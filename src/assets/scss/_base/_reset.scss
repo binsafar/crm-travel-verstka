@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: calc(1490px - 80px);
+  margin: auto;
+  padding: 0 40px;
+}
+
+.primary-btn {
+  background-color: #1D82F5;
+  color: #FFFFFF;
+  border: none;
+  padding: 16px 24px;
+  border-radius: 14px;
+  font-size: 18px;
+}
