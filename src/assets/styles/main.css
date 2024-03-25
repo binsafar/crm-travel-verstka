@@ -158,6 +158,48 @@ a {
     padding-bottom: 16px;
     font-size: 16px; }
 
+.offered {
+  margin-top: 100px; }
+  .offered__header {
+    text-align: center; }
+  .offered__description {
+    margin-top: 18px;
+    text-align: center; }
+  .offered__list {
+    margin-top: 48px; }
+
+.service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px; }
+  .service:nth-child(even) {
+    flex-direction: row-reverse; }
+  .service:nth-child(even) .service__left {
+    margin-left: 32px;
+    margin-right: 0; }
+  .service__left {
+    background-color: #FAFAFA;
+    border-radius: 40px;
+    max-height: 410px;
+    width: auto;
+    margin-right: 32px; }
+    .service__left img {
+      max-height: 410px;
+      width: auto; }
+  .service__wrap {
+    padding: 0 60px; }
+  .service__right {
+    border-radius: 40px;
+    max-width: 745px;
+    height: 410px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAFAFA; }
+  .service__description {
+    margin-top: 24px; }
+
 .application {
   display: flex;
   justify-content: space-between;

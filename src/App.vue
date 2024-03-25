@@ -8,6 +8,7 @@
     <div class="container">
       <FaqSection/>
       <SendApplicationSection/>
+      <OfferedServicesSection/>
       <TryDemoSection/>
     </div>
   </main>
@@ -20,4 +21,5 @@ import SendApplicationSection from "./components/sections/SendApplicationSection
 import TryDemoSection from "./components/sections/TryDemoSection.vue";
 import Header from "./components/Header.vue";
 import FaqSection from "./components/sections/FaqSection.vue";
+import OfferedServicesSection from "./components/OfferedServicesSection.vue";
 </script>
