@@ -1,0 +1,25 @@
+.demo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 100px 0 120px 0;
+
+  &__left {
+    .primary-btn {
+      margin-top: 40px;
+    }
+  }
+
+  &__header {
+    max-width: 490px;
+  }
+
+  &__right {
+    max-width: 510px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
