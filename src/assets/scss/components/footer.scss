@@ -5,7 +5,8 @@
   padding-bottom: 74px;
 
   .footer {
-    max-width: 1132px;
+    max-width: calc(1132px - 32px);
+    padding: 0 16px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -14,6 +15,43 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+
+    &__first {
+      padding-bottom: 26px;
+    }
+
+    &__logo {
+      max-width: 230px;
+    }
+
+    &__title {
+      font-size: 14px;
+      font-weight: 500;
+      white-space: nowrap;
+      margin-top: 6px;
+    }
+
+    &__links {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    &__contacts {
+      display: flex;
+      gap: 30px;
+    }
+
+    &__socials {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    &__second {
+      border-top: 1px solid #2E3545;
+      padding-top: 32px;
     }
   }
 }
