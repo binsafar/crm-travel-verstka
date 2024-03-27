@@ -41,12 +41,23 @@ a {
       font-weight: 500;
       margin-top: 6px;
       white-space: nowrap; }
+  .header #burger {
+    display: none; }
+  .header__burger {
+    display: none; }
+    @media screen and (max-width: 1024px) {
+      .header__burger {
+        display: inline-block;
+        cursor: pointer; } }
   .header__swipe {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-left: 90px; }
+    @media screen and (max-width: 1024px) {
+      .header__swipe {
+        display: none; } }
     .header__swipe .primary-btn {
       white-space: normal;
       max-width: 210px;

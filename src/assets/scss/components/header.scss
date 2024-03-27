@@ -22,12 +22,29 @@
     }
   }
 
+  #burger {
+    display: none;
+  }
+
+  &__burger {
+    display: none;
+
+    @include resize(lg) {
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
+
   &__swipe {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-left: 90px;
+
+    @include resize(lg) {
+      display: none;
+    }
 
     .primary-btn {
       white-space: normal;

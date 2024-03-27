@@ -18,5 +18,10 @@
 
       <button class="primary-btn">Записаться <br> на консультацию</button>
     </div>
+
+    <input type="checkbox" id="burger">
+    <label for="burger">
+      <img class="header__burger" src="../assets/img/plus.svg" alt="">
+    </label>
   </header>
 </template>
