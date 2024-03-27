@@ -1,6 +1,6 @@
 <template>
   <div class="plans">
-    <h1 class="plans__header">Выберите тариф для вашего бизнеса</h1>
+    <h1 class="plans__header">Выберите <span class="plans__tariff">тариф</span> для вашего бизнеса</h1>
 
     <div class="plans__list">
       <PlanCard :item="plansList[0]"/>
