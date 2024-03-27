@@ -1,0 +1,24 @@
+.convideo {
+  max-width: 870px;
+  margin: 100px auto auto;
+
+  &__header {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+  }
+
+  &__description {
+    text-align: center;
+    margin-top: 18px;
+  }
+
+  &__video {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    margin-top: 68px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+}

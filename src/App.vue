@@ -9,8 +9,10 @@
       <FaqSection/>
       <SendApplicationSection/>
       <OfferedServicesSection/>
+      <HowWorksSection/>
       <TryDemoSection/>
     </div>
+    <Footer/>
   </main>
 </template>
 
@@ -22,4 +24,6 @@ import TryDemoSection from "./components/sections/TryDemoSection.vue";
 import Header from "./components/Header.vue";
 import FaqSection from "./components/sections/FaqSection.vue";
 import OfferedServicesSection from "./components/OfferedServicesSection.vue";
+import HowWorksSection from "./components/sections/HowWorksSection.vue";
+import Footer from "./components/Footer.vue";
 </script>
