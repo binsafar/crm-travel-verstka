@@ -6,7 +6,9 @@
         бесплатно, чтобы увидеть
         рост вашего бизнеса.
       </h1>
-      <button class="primary-btn">Попробовать бесплатно</button>
+      <div class="demo__btnr">
+        <button class="primary-btn">Попробовать бесплатно</button>
+      </div>
     </div>
 
     <div class="demo__right">
@@ -14,3 +16,5 @@
     </div>
   </div>
 </template>
+<script setup>
+</script>

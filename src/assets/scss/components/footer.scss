@@ -15,14 +15,28 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      @include resize(lg) {
+        flex-direction: column;
+      }
     }
 
     &__first {
       padding-bottom: 26px;
+      @include resize(lg) {
+        gap: 16px;
+      }
     }
 
     &__logo {
       max-width: 230px;
+      
+      @include resize(lg) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
     }
 
     &__title {
@@ -36,22 +50,40 @@
       display: flex;
       align-items: center;
       gap: 40px;
+      @include resize(lg) {
+        flex-direction: column;
+        gap: 16px;
+        order: 3;
+        border-top: 1px solid #2E3545;
+        width: 100%;
+        padding: 40px 0 calc(40px - 26px) 0;
+      }
     }
 
     &__contacts {
       display: flex;
       gap: 30px;
+      @include resize(lg) {
+        flex-direction: column;
+        gap: 16px;
+      }
     }
 
     &__socials {
       display: flex;
       align-items: center;
       gap: 24px;
+      @include resize(lg) {
+        order: 2;
+      }
     }
 
     &__second {
       border-top: 1px solid #2E3545;
       padding-top: 32px;
+      @include resize(lg) {
+        gap: 16px;
+      }
     }
   }
 }

@@ -14,7 +14,7 @@ $breakpoints: (
   @return map-get($breakpoints, $breakpoint);
 }
 
-@mixin respond($breakpoint) {
+@mixin resize($breakpoint) {
   $width: calculate-breakpoint($breakpoint);
 
   @media screen and (max-width: $width) {

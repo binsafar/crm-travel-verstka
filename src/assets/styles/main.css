@@ -73,13 +73,21 @@ a {
     align-items: end;
     gap: 20px;
     margin-top: 48px; }
+    @media screen and (max-width: 1024px) {
+      .plans__list {
+        flex-direction: column;
+        align-items: center; } }
 
 .plancard {
+  width: 33.33%;
   padding: 32px;
   border-radius: 16px;
   max-width: 442px;
   box-shadow: 0 0 50px 0 rgba(18, 17, 39, 0.1);
   height: auto; }
+  @media screen and (max-width: 1024px) {
+    .plancard {
+      width: 100%; } }
   .plancard__btn {
     all: unset;
     width: 100%;
@@ -298,10 +306,22 @@ a {
   align-items: center;
   justify-content: space-between;
   margin: 100px 0 120px 0; }
+  @media screen and (max-width: 1024px) {
+    .demo {
+      flex-direction: column-reverse;
+      justify-content: center; } }
+  @media screen and (max-width: 1024px) {
+    .demo__btnr {
+      display: flex;
+      align-items: center;
+      justify-content: center; } }
   .demo__left .primary-btn {
     margin-top: 40px; }
   .demo__header {
     max-width: 490px; }
+    @media screen and (max-width: 1024px) {
+      .demo__header {
+        text-align: center; } }
   .demo__right {
     max-width: 510px; }
     .demo__right img {
@@ -323,10 +343,22 @@ a {
       display: flex;
       justify-content: space-between;
       align-items: center; }
+      @media screen and (max-width: 1024px) {
+        .footer-container .footer__first, .footer-container .footer__second {
+          flex-direction: column; } }
     .footer-container .footer__first {
       padding-bottom: 26px; }
+      @media screen and (max-width: 1024px) {
+        .footer-container .footer__first {
+          gap: 16px; } }
     .footer-container .footer__logo {
       max-width: 230px; }
+      @media screen and (max-width: 1024px) {
+        .footer-container .footer__logo {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; } }
     .footer-container .footer__title {
       font-size: 14px;
       font-weight: 500;
@@ -336,13 +368,31 @@ a {
       display: flex;
       align-items: center;
       gap: 40px; }
+      @media screen and (max-width: 1024px) {
+        .footer-container .footer__links {
+          flex-direction: column;
+          gap: 16px;
+          order: 3;
+          border-top: 1px solid #2E3545;
+          width: 100%;
+          padding: 40px 0 calc(40px - 26px) 0; } }
     .footer-container .footer__contacts {
       display: flex;
       gap: 30px; }
+      @media screen and (max-width: 1024px) {
+        .footer-container .footer__contacts {
+          flex-direction: column;
+          gap: 16px; } }
     .footer-container .footer__socials {
       display: flex;
       align-items: center;
       gap: 24px; }
+      @media screen and (max-width: 1024px) {
+        .footer-container .footer__socials {
+          order: 2; } }
     .footer-container .footer__second {
       border-top: 1px solid #2E3545;
       padding-top: 32px; }
+      @media screen and (max-width: 1024px) {
+        .footer-container .footer__second {
+          gap: 16px; } }

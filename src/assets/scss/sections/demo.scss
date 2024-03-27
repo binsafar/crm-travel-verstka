@@ -3,6 +3,18 @@
   align-items: center;
   justify-content: space-between;
   margin: 100px 0 120px 0;
+  @include resize(lg) {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  &__btnr {
+    @include resize(lg) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 
   &__left {
     .primary-btn {
@@ -12,6 +24,9 @@
 
   &__header {
     max-width: 490px;
+    @include resize(lg) {
+      text-align: center;
+    }
   }
 
   &__right {
