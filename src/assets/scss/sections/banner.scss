@@ -5,7 +5,21 @@
   max-height: 590px;
   background: #FAFAFA;
 
+  @include resize(lg) {
+    background: #FFFFFF;
+    flex-direction: column;
+    gap: 16px;
+  }
+
   &__left {
+    @include resize(lg) {
+      background: #FAFAFA;
+      width: 100%;
+      object-fit: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &__img {
@@ -14,5 +28,11 @@
 
   &__right {
     max-width: 730px;
+
+    @include resize(lg) {
+      background: #FAFAFA;
+      padding: 16px;
+      max-width: none;
+    }
   }
 }

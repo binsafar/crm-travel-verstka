@@ -7,8 +7,23 @@
   padding: 40px 120px;
   margin-top: 100px;
 
+  @include resize(lg) {
+    padding: 24px 60px;
+  }
+
+  @include resize(lg) {
+    flex-direction: column;
+    gap: 26px;
+  }
+
   &__left {
     max-width: 580px;
+    @include resize(lg) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__header {
