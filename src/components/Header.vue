@@ -20,8 +20,8 @@
     </div>
 
     <input type="checkbox" id="burger">
-    <label for="burger">
-      <img class="header__burger" src="../assets/img/plus.svg" alt="">
+    <label class="header__label" for="burger">
+      <img class="header__burger" src="../assets/img/group/first.png" alt="">
     </label>
   </header>
 </template>

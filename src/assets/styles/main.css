@@ -74,6 +74,9 @@ a {
       font-size: 14px;
       cursor: pointer; }
 
+#burger:checked + .header__label + .header__burger {
+  transform: rotate(10deg); }
+
 .plans {
   margin-top: 100px; }
   .plans__header {

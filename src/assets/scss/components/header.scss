@@ -68,3 +68,7 @@
     }
   }
 }
+
+#burger:checked + .header__label + .header__burger {
+  transform: rotate(10deg);
+}
