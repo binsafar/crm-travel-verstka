@@ -8,7 +8,9 @@
     <div class="container">
       <FaqSection/>
       <SendApplicationSection/>
-      <OfferedServicesSection/>
+    </div>
+    <OfferedServicesSection/>
+    <div class="container">
       <HowWorksSection/>
       <Plans/>
       <TryDemoSection/>

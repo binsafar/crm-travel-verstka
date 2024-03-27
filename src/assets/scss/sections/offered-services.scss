@@ -12,6 +12,11 @@
 
   &__list {
     margin-top: 48px;
+    @include resize(lg) {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
   }
 }
 
@@ -20,14 +25,25 @@
   align-items: center;
   justify-content: center;
   margin-top: 32px;
+  @include resize(lg) {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 0;
+  }
 
   &:nth-child(even) {
     flex-direction: row-reverse;
+    @include resize(lg) {
+      flex-direction: column;
+    }
   }
 
   &:nth-child(even) &__left {
     margin-left: 32px;
     margin-right: 0;
+    @include resize(lg) {
+      margin-left: 0;
+    }
   }
 
   &__left {
@@ -60,4 +76,5 @@
   &__description {
     margin-top: 24px;
   }
+
 }
