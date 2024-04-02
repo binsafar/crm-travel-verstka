@@ -4,17 +4,22 @@
       <Header/>
       <MainSection/>
     </div>
+
     <CrmBannerSection/>
+
     <div class="container">
       <FaqSection/>
       <SendApplicationSection/>
     </div>
+
     <OfferedServicesSection/>
+
     <div class="container">
       <HowWorksSection/>
       <Plans/>
       <TryDemoSection/>
     </div>
+
     <Footer/>
   </main>
 </template>
