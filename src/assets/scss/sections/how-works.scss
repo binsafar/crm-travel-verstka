@@ -11,6 +11,10 @@
       font-size: 32px;
       line-height: 40px;
     }
+
+    @include resize(md) {
+      font-size: 22px;
+    }
   }
 
   &__description {

@@ -149,6 +149,9 @@ button {
         font-size: 32px;
         line-height: 40px;
         max-width: 360px; } }
+    @media screen and (max-width: 768px) {
+      .plans__header {
+        font-size: 22px; } }
   .plans__tariff {
     color: #1D82F5; }
   .plans__list {
@@ -189,6 +192,9 @@ button {
     color: #1D82F5;
     margin-right: 12px;
     white-space: nowrap; }
+    @media screen and (max-width: 768px) {
+      .plancard__num {
+        font-size: 32px; } }
   .plancard__description {
     margin-top: 16px;
     color: #999999;
@@ -310,7 +316,7 @@ button {
         max-width: 440px; } }
     @media screen and (max-width: 768px) {
       .main__header {
-        font-size: 28px; } }
+        font-size: 22px; } }
     .main__header span {
       color: #1D82F5; }
   .main__right {
@@ -389,6 +395,9 @@ button {
       .crm__header {
         font-size: 32px;
         line-height: 40px; } }
+    @media screen and (max-width: 768px) {
+      .crm__header {
+        font-size: 22px; } }
     @media screen and (max-width: 1024px) {
       .crm__header {
         text-align: center; } }
@@ -415,6 +424,9 @@ button {
         font-size: 32px;
         line-height: 40px;
         max-width: 610px; } }
+    @media screen and (max-width: 768px) {
+      .faq__header {
+        font-size: 22px; } }
   .faq__description {
     font-size: 22px;
     font-weight: 500;
@@ -436,6 +448,9 @@ button {
     padding: 34px 0;
     font-weight: 500;
     font-size: 24px; }
+    @media screen and (max-width: 768px) {
+      .drop__header {
+        font-size: 22px; } }
   .drop__description {
     font-weight: 400;
     padding-bottom: 16px;
@@ -449,6 +464,9 @@ button {
       .offered__header {
         font-size: 32px;
         line-height: 40px; } }
+    @media screen and (max-width: 768px) {
+      .offered__header {
+        font-size: 22px; } }
   .offered__description {
     text-align: center;
     max-width: 500px;
@@ -470,6 +488,9 @@ button {
     .service__header {
       font-size: 32px;
       line-height: 40px; } }
+  @media screen and (max-width: 768px) {
+    .service__header {
+      font-size: 22px; } }
   @media screen and (max-width: 1024px) {
     .service {
       flex-direction: column;
@@ -562,6 +583,9 @@ button {
       .convideo__header {
         font-size: 32px;
         line-height: 40px; } }
+    @media screen and (max-width: 768px) {
+      .convideo__header {
+        font-size: 22px; } }
   .convideo__description {
     text-align: center;
     margin-top: 18px; }
@@ -594,6 +618,9 @@ button {
     @media screen and (max-width: 1024px) {
       .demo__header {
         text-align: center; } }
+    @media screen and (max-width: 768px) {
+      .demo__header {
+        font-size: 22px; } }
   .demo__right {
     max-width: 510px; }
     .demo__right img {

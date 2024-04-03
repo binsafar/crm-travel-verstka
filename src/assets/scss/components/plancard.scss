@@ -11,6 +11,9 @@
       line-height: 40px;
       max-width: 360px;
     }
+    @include resize(md) {
+      font-size: 22px;
+    }
   }
 
   &__tariff {
@@ -70,6 +73,10 @@
     color: #1D82F5;
     margin-right: 12px;
     white-space: nowrap;
+
+    @include resize(md) {
+      font-size: 32px;
+    }
   }
 
   &__description {

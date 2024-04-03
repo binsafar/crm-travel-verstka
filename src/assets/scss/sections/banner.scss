@@ -47,6 +47,10 @@
       line-height: 40px;
     }
 
+    @include resize(md) {
+      font-size: 22px;
+    }
+
     @include resize(lg) {
       text-align: center;
     }
