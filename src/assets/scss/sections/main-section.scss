@@ -14,7 +14,8 @@
     height: 100%;
     flex-direction: column;
     padding: 60px 0 100px 0;
-    align-items: start;
+    align-items: center;
+    text-align: center;
   }
 
   &__left {
@@ -26,6 +27,13 @@
 
     .primary-btn {
       margin-top: 40px;
+    }
+
+    @include resize(lg) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
   }
 
@@ -39,10 +47,18 @@
     @include resize(xl) {
       font-size: 32px;
     }
+
+    @include resize(md) {
+      font-size: 28px;
+    }
   }
 
   &__description {
     font-size: 18px;
+
+    @include resize(md) {
+      max-width: 380px;
+    }
   }
 
   &__header {
@@ -51,11 +67,15 @@
     margin-top: 40px;
 
     @include resize(xl) {
-      font-size: 40px;
+      font-size: 32px;
     }
 
-    @include resize(xl) {
-      font-size: 32px;
+    @include resize(lg) {
+      max-width: 440px;
+    }
+
+    @include resize(md) {
+      font-size: 28px;
     }
 
     span {
@@ -119,5 +139,9 @@
   .card__count {
     font-size: 24px;
     font-weight: 600;
+
+    @include resize(lg) {
+      text-align: left;
+    }
   }
 }

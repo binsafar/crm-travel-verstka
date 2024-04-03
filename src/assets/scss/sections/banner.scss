@@ -37,4 +37,24 @@
       max-width: none;
     }
   }
+
+  &__header {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+
+    @include resize(xl) {
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    span {
+      color: #1D82F5;
+    }
+  }
+
+  &__description {
+    margin-top: 38px;
+    max-width: 620px;
+  }
 }

@@ -20,6 +20,10 @@
         font-weight: 500;
         margin-top: 6px;
         white-space: nowrap;
+
+        @include resize(md) {
+          font-size: 12px;
+        }
       }
     }
 

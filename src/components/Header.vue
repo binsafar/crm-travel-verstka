@@ -11,10 +11,10 @@
     </div>
 
     <div class="header__swipe">
-      <a href="/#opportunities">Возможности</a>
-      <a href="/#plans">Тариф</a>
-      <a href="/#contacts">Контакты</a>
-      <a href="/" class="phone">+998 (99) 999-99-99</a>
+      <a class="close__btn" href="/#opportunities">Возможности</a>
+      <a class="close__btn" href="/#plans">Тариф</a>
+      <a class="close__btn" href="/#contacts">Контакты</a>
+      <a href="/" class="phone close__btn">+998 (99) 999-99-99</a>
 
       <button class="lang-switcher">
         <img src="../assets/img/lang/rus.svg" alt="">
@@ -45,6 +45,7 @@ const hideScroll = () => {
 
 onMounted(() => {
   const burgerBtns = document.querySelectorAll('.header__btn');
+  const closeBtns = document.querySelectorAll('.close__btn');
   const swipeMenu = document.querySelector('.header');
 
   function toggleMenu() {
@@ -52,7 +53,8 @@ onMounted(() => {
     hideScroll();
   }
 
-  burgerBtns.forEach(burgerBtn => {
+
+  [...burgerBtns, ...closeBtns].forEach(burgerBtn => {
     burgerBtn.addEventListener('click', toggleMenu);
   });
 });

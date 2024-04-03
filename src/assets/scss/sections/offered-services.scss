@@ -3,6 +3,11 @@
 
   &__header {
     text-align: center;
+
+    @include resize(xl) {
+      font-size: 32px;
+      line-height: 40px;
+    }
   }
 
   &__description {
@@ -25,6 +30,14 @@
   align-items: center;
   justify-content: center;
   margin-top: 32px;
+
+  &__header {
+    @include resize(xl) {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+
   @include resize(lg) {
     flex-direction: column;
     gap: 16px;

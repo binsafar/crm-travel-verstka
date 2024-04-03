@@ -23,7 +23,7 @@
         </div>
       </div>
 
-      <div class="footer__second">
+      <div class="footer__second" id="contacts">
         <p class="footer__copyright">&copy; 2024 CRM TRAVEL</p>
         <a class="footer__link" href="mailto:info@crmtravel.uz">info@crmtravel.uz</a>
         <a class="footer__link" href="">Договор оферты</a>
