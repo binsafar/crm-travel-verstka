@@ -64,7 +64,8 @@ a {
       padding: 10px 36px;
       font-size: 16px; }
     .header__swipe .phone {
-      margin-left: 114px; }
+      margin-left: 114px;
+      white-space: nowrap; }
     .header__swipe .lang-switcher {
       all: unset;
       display: flex;
@@ -147,6 +148,15 @@ a {
   padding: 60px 0 100px 0;
   height: 100vh;
   max-height: 1600px; }
+  @media screen and (max-width: 1280px) {
+    .main {
+      padding: 0; } }
+  @media screen and (max-width: 1024px) {
+    .main {
+      height: 100%;
+      flex-direction: column;
+      padding: 60px 0 100px 0;
+      align-items: start; } }
   .main__left {
     max-width: 650px; }
     .main__left .card {
@@ -154,20 +164,34 @@ a {
     .main__left .primary-btn {
       margin-top: 40px; }
   .main__title {
-    font-size: 56px; }
+    font-size: 47px; }
+    @media screen and (max-width: 1280px) {
+      .main__title {
+        font-size: 40px; } }
+    @media screen and (max-width: 1280px) {
+      .main__title {
+        font-size: 32px; } }
   .main__description {
     font-size: 18px; }
   .main__header {
-    font-size: 56px;
+    font-size: 47px;
     font-weight: bold;
     margin-top: 40px; }
+    @media screen and (max-width: 1280px) {
+      .main__header {
+        font-size: 40px; } }
+    @media screen and (max-width: 1280px) {
+      .main__header {
+        font-size: 32px; } }
     .main__header span {
       color: #1D82F5; }
   .main__right {
     max-width: 820px; }
     .main__right img {
       max-width: 820px;
-      width: 100%; }
+      width: 100%;
+      min-width: 373px;
+      min-height: 343px; }
 
 .card {
   display: flex; }

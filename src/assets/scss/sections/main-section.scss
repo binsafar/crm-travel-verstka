@@ -6,6 +6,17 @@
   height: 100vh;
   max-height: 1600px;
 
+  @include resize(xl) {
+    padding: 0;
+  }
+
+  @include resize(lg) {
+    height: 100%;
+    flex-direction: column;
+    padding: 60px 0 100px 0;
+    align-items: start;
+  }
+
   &__left {
     max-width: 650px;
 
@@ -19,7 +30,15 @@
   }
 
   &__title {
-    font-size: 56px;
+    font-size: 47px;
+
+    @include resize(xl) {
+      font-size: 40px;
+    }
+
+    @include resize(xl) {
+      font-size: 32px;
+    }
   }
 
   &__description {
@@ -27,9 +46,17 @@
   }
 
   &__header {
-    font-size: 56px;
+    font-size: 47px;
     font-weight: bold;
     margin-top: 40px;
+
+    @include resize(xl) {
+      font-size: 40px;
+    }
+
+    @include resize(xl) {
+      font-size: 32px;
+    }
 
     span {
       color: #1D82F5;
@@ -42,6 +69,9 @@
     img {
       max-width: 820px;
       width: 100%;
+
+      min-width: 373px;
+      min-height: 343px;
     }
   }
 }
