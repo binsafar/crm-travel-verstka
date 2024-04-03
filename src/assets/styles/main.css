@@ -32,6 +32,9 @@ button {
   white-space: nowrap;
   outline: none; }
 
+.lock {
+  overflow: hidden; }
+
 .header {
   display: flex;
   align-items: center;
@@ -43,13 +46,15 @@ button {
   .header__logo {
     display: flex;
     flex-direction: column; }
-    .header__logo p {
+    .header__logo .logo__wrap p {
       font-size: 14px;
       font-weight: 500;
       margin-top: 6px;
       white-space: nowrap; }
-  .header #burger {
-    display: none; }
+    .header__logo .header__btn {
+      display: none; }
+  .header__btn {
+    all: unset; }
   .header__burger {
     display: none; }
     @media screen and (max-width: 1024px) {
@@ -73,6 +78,11 @@ button {
     .header__swipe .phone {
       margin-left: 114px;
       white-space: nowrap; }
+      @media screen and (max-width: 1280px) {
+        .header__swipe .phone {
+          display: none; } }
+    .header__swipe .phone__social {
+      display: none; }
     .header__swipe .lang-switcher {
       all: unset;
       display: flex;
@@ -82,8 +92,48 @@ button {
       font-size: 14px;
       cursor: pointer; }
 
-#burger:checked + .header__label + .header__burger {
-  transform: rotate(10deg); }
+.show {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  padding: 16px 56px 60px 56px; }
+  .show .header__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px; }
+    .show .header__logo .header__btn {
+      display: inline-block;
+      transform: rotate(45deg); }
+  .show .header__swipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 0; }
+    .show .header__swipe .lang-switcher {
+      margin-top: 42px; }
+  .show .phone {
+    display: inline-block;
+    margin: 0; }
+  .show .header__btn {
+    display: none; }
+  .show .phone__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; }
 
 .plans {
   margin-top: 100px; }

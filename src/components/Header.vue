@@ -1,8 +1,13 @@
 <template>
   <header class="header">
     <div class="header__logo">
-      <img src="../assets/img/logo.svg" alt="">
-      <p>Профильная CRM для турбизнеса</p>
+      <div class="logo__wrap">
+        <img src="../assets/img/logo.svg" alt="">
+        <p>Профильная CRM для турбизнеса</p>
+      </div>
+      <button class="header__btn">
+        <img class="header__burger" src="../assets/img/plus.svg" alt="">
+      </button>
     </div>
 
     <div class="header__swipe">
@@ -17,11 +22,38 @@
       </button>
 
       <button class="primary-btn">Записаться <br> на консультацию</button>
+      <div class="phone__social">
+        <a href=""><img src="../assets/img/dark/facebook.svg" alt=""></a>
+        <a href=""><img src="../assets/img/dark/telegram.svg" alt=""></a>
+        <a href=""><img src="../assets/img/dark/instagram.svg" alt=""></a>
+      </div>
     </div>
 
-    <input type="checkbox" id="burger">
-    <label class="header__label" for="burger">
+    <button class="header__btn">
       <img class="header__burger" src="../assets/img/plus.svg" alt="">
-    </label>
+    </button>
   </header>
 </template>
+
+<script setup>
+import {onMounted} from "vue";
+
+const hideScroll = () => {
+  const body = document.querySelector('body');
+  body.classList.toggle('lock');
+}
+
+onMounted(() => {
+  const burgerBtns = document.querySelectorAll('.header__btn');
+  const swipeMenu = document.querySelector('.header');
+
+  function toggleMenu() {
+    swipeMenu.classList.toggle('show');
+    hideScroll();
+  }
+
+  burgerBtns.forEach(burgerBtn => {
+    burgerBtn.addEventListener('click', toggleMenu);
+  });
+});
+</script>
