@@ -117,16 +117,27 @@ button {
   .plancard__title {
     font-size: 18px;
     font-weight: 600;
-    line-height: 22px; }
+    line-height: 22px;
+    color: #999999; }
   .plancard__price {
-    color: #1D82F5;
-    font-size: 14px; }
+    font-size: 14px;
+    color: #999999; }
   .plancard__num {
     font-size: 40px;
     font-weight: 600;
-    line-height: 48px; }
+    line-height: 48px;
+    color: #1D82F5; }
   .plancard__description {
-    margin-top: 16px; }
+    margin-top: 16px;
+    color: #999999;
+    border-bottom: 1px solid #F2F2F2;
+    padding-bottom: 26px; }
+  .plancard__body {
+    margin-top: 28px; }
+  .plancard__advantage {
+    font-weight: 600;
+    font-size: 14px;
+    color: #999999; }
   .plancard__btn {
     all: unset;
     width: 100%;
@@ -144,6 +155,14 @@ button {
 .pro {
   background-color: #1D82F5;
   color: #FFFFFF; }
+  .pro__title {
+    color: #FFFFFF; }
+  .pro__advantage {
+    color: #FFFFFF; }
+  .pro__description {
+    color: #FFFFFF; }
+  .pro__title_adv {
+    color: #FFFFFF !important; }
   .pro__price, .pro__num {
     color: #FFFFFF; }
   .pro__btn {
@@ -157,6 +176,11 @@ button {
   flex-direction: column;
   gap: 16px;
   margin-top: 16px; }
+  .advantages__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #142444; }
   .advantages__wrap {
     display: flex;
     align-items: center;
