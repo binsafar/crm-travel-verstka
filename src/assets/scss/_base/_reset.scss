@@ -17,10 +17,19 @@ a {
   color: inherit;
 }
 
+button {
+  cursor: pointer;
+}
+
 .container {
   max-width: calc(1490px - 80px);
   margin: auto;
   padding: 0 40px;
+
+  @include resize(md) {
+    max-width: calc(1490px - 32px);
+    padding: 0 16px;
+  }
 }
 
 .primary-btn {

@@ -9,10 +9,17 @@ a {
   text-decoration: none;
   color: inherit; }
 
+button {
+  cursor: pointer; }
+
 .container {
   max-width: calc(1490px - 80px);
   margin: auto;
   padding: 0 40px; }
+  @media screen and (max-width: 768px) {
+    .container {
+      max-width: calc(1490px - 32px);
+      padding: 0 16px; } }
 
 .primary-btn {
   background-color: #1D82F5;
@@ -104,6 +111,22 @@ a {
   @media screen and (max-width: 1024px) {
     .plancard {
       width: 100%; } }
+  @media screen and (max-width: 768px) {
+    .plancard {
+      max-width: none; } }
+  .plancard__title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px; }
+  .plancard__price {
+    color: #1D82F5;
+    font-size: 14px; }
+  .plancard__num {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px; }
+  .plancard__description {
+    margin-top: 16px; }
   .plancard__btn {
     all: unset;
     width: 100%;
@@ -115,11 +138,14 @@ a {
     margin-top: 28px;
     margin-bottom: 68px;
     font-weight: 700;
-    line-height: 20px; }
+    line-height: 20px;
+    cursor: pointer; }
 
 .pro {
   background-color: #1D82F5;
   color: #FFFFFF; }
+  .pro__price, .pro__num {
+    color: #FFFFFF; }
   .pro__btn {
     background-color: #FFFFFF;
     color: #1D82F5; }

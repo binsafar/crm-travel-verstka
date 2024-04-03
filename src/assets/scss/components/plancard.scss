@@ -33,20 +33,33 @@
     width: 100%;
   }
 
+  @include resize(md) {
+    max-width: none;
+  }
 
   &__header {
 
   }
 
   &__title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+  }
 
+  &__price {
+    color: #1D82F5;
+    font-size: 14px;
   }
 
   &__num {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
   }
 
   &__description {
-
+    margin-top: 16px;
   }
 
   &__body {
@@ -73,12 +86,17 @@
     margin-bottom: 68px;
     font-weight: 700;
     line-height: 20px;
+    cursor: pointer;
   }
 }
 
 .pro {
   background-color: #1D82F5;
   color: #FFFFFF;
+
+  &__price, &__num {
+    color: #FFFFFF;
+  }
 
   &__btn {
     background-color: #FFFFFF;

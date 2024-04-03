@@ -2,7 +2,7 @@
   <div class="plancard pro">
     <div class="plancard__header">
       <p class="plancard__title">{{ item.title }}</p>
-      <p class="plancard__price"><span class="plancard__num">{{ item.price }}</span>{{ item.currency }}</p>
+      <p class="plancard__price pro__price"><span class="plancard__num pro__num">{{ item.price }}</span>{{ item.currency }}</p>
       <p class="plancard__description">{{ item.description }}</p>
     </div>
 
