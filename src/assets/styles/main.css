@@ -513,6 +513,9 @@ button {
     max-height: 410px;
     width: auto;
     margin-right: 32px; }
+    @media screen and (max-width: 1024px) {
+      .service__left {
+        margin-right: 0; } }
     .service__left img {
       max-height: 410px;
       width: auto;

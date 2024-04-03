@@ -76,6 +76,10 @@
     width: auto;
     margin-right: 32px;
 
+    @include resize(lg) {
+      margin-right: 0;
+    }
+
     img {
       max-height: 410px;
       width: auto;
