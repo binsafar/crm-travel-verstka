@@ -241,7 +241,9 @@ a {
       align-items: center;
       justify-content: center; } }
   .crm__img {
-    max-height: 590px; }
+    max-height: 590px;
+    max-width: 100%;
+    object-fit: cover; }
   .crm__right {
     max-width: 730px; }
     @media screen and (max-width: 1024px) {
@@ -325,7 +327,9 @@ a {
     margin-right: 32px; }
     .service__left img {
       max-height: 410px;
-      width: auto; }
+      width: auto;
+      max-width: 100%;
+      object-fit: cover; }
   .service__wrap {
     padding: 0 60px; }
   .service__right {

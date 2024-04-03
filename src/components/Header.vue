@@ -21,7 +21,7 @@
 
     <input type="checkbox" id="burger">
     <label class="header__label" for="burger">
-      <img class="header__burger" src="../assets/img/group/first.png" alt="">
+      <img class="header__burger" src="../assets/img/plus.svg" alt="">
     </label>
   </header>
 </template>

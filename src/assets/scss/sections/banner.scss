@@ -24,6 +24,8 @@
 
   &__img {
     max-height: 590px;
+    max-width: 100%;
+    object-fit: cover;
   }
 
   &__right {
