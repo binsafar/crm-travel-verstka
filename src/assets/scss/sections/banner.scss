@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  max-height: 590px;
   background: #FAFAFA;
 
   @include resize(lg) {
@@ -48,6 +47,10 @@
       line-height: 40px;
     }
 
+    @include resize(lg) {
+      text-align: center;
+    }
+
     span {
       color: #1D82F5;
     }
@@ -56,5 +59,10 @@
   &__description {
     margin-top: 38px;
     max-width: 620px;
+
+    @include resize(lg) {
+      text-align: center;
+      margin: 38px auto auto;
+    }
   }
 }

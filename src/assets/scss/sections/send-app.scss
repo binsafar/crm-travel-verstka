@@ -29,15 +29,24 @@
   &__header {
     font-size: 38px;
     font-weight: 600;
+    white-space: nowrap;
 
     @include resize(xl) {
       font-size: 32px;
       line-height: 40px;
+    }
+
+    @include resize(md) {
+      font-size: 22px;
     }
   }
 
   &__description {
     max-width: 420px;
     margin-top: 20px;
+
+    @include resize(lg) {
+      text-align: center;
+    }
   }
 }
